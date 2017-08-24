@@ -73,6 +73,18 @@ public class UrlError extends CordovaPlugin {
             callbackContext.sendPluginResult(pluginResult);
             return true;
         }
+
+        if ("loadUrl".equals(action)) {
+            final String loadUrl = args.getString(0);
+            if(loadUrl!=null && loadUrl.length()>0){
+                cordova.getActivity().runOnUiThread(new Runnable() {
+                    public void run() {
+                        webView.loadUrlIntoView(loadUrl,true);
+                    }
+                });
+            }
+            return true;
+        }
         return false;
     }
 }
