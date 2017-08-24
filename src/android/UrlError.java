@@ -75,7 +75,12 @@ public class UrlError extends CordovaPlugin {
         }
 
         if ("loadUrl".equals(action)) {
-            final String loadUrl = args.getString(0);
+            String l = args.getString(0);
+            boolean isInnerRes = args.getBoolean(1);
+            if(isInnerRes){
+                l = "file:///android_asset/www/" + l;
+            }
+            final String loadUrl = l;
             if(loadUrl!=null && loadUrl.length()>0){
                 cordova.getActivity().runOnUiThread(new Runnable() {
                     public void run() {
