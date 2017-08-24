@@ -5,19 +5,20 @@
   <license>Apache 2.0</license>
   <keywords>cordova,UrlError</keywords>
   <engines>
-    <engine name="cordova-android" version="&gt;=3.6.0" />
-    <engine name="cordova-windows" version="&gt;=4.4.0" />
+    <engine name="cordova-android" version=">=3.6.0" />
+    <engine name="cordova-windows" version=">=4.4.0" />
   </engines>
   <js-module name="UrlError" src="www/urlerror.js">
     <clobbers target="navigator.urlerror" />
-  </js-module><platform name="android">
-  <config-file parent="/*" target="res/xml/config.xml">
-    <feature name="UrlError">
-      <param name="android-package" value="org.apache.cordova.urlerror.UrlError" />
-      <param name="onload" value="true" />
-    </feature>
-  </config-file>
-  <source-file src="src/android/UrlError.java" target-dir="src/org/apache/cordova/urlerror" />
+  </js-module>
+  <platform name="android">
+    <config-file parent="/*" target="res/xml/config.xml">
+      <feature name="UrlError">
+        <param name="android-package" value="org.apache.cordova.urlerror.UrlError" />
+        <param name="onload" value="true" />
+      </feature>
+    </config-file>
+    <source-file src="src/android/UrlError.java" target-dir="src/org/apache/cordova/urlerror" />
   </platform>
   <platform name="ios">
     <config-file parent="/*" target="config.xml">
