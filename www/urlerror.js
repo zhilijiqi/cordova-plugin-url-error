@@ -22,8 +22,8 @@
 var exec = require('cordova/exec');
 
 var urlerror = {
-    errorUrl:function() {
-        exec(null, null, "UrlError", "errorUrl", []);
+    errorUrl:function(callback,errorCallback) {
+        exec(callback, errorCallback, "UrlError", "errorUrl", []);
     }
 };
 
