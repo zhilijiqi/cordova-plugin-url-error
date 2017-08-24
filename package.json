@@ -3,7 +3,8 @@
   "cordova": {
     "id": "cordova-plugin-urlerror",
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   },
   "deprecated": false,
@@ -32,5 +33,5 @@
     "type": "git",
     "url": "git+https://github.com/zhilijiqi/cordova-plugin-url-error.git"
   },
-  "version": "0.0.1"
+  "version": "1.0.0"
 }
