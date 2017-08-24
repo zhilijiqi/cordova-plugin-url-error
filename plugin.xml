@@ -20,7 +20,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
            id="cordova-plugin-url-error"
-      version="1.0.0">
+      version="0.0.1">
     <name>UrlError</name>
     <description>Cordova UrlError Plugin</description>
     <license>Apache 2.0</license>
