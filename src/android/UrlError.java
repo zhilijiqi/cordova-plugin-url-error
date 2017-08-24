@@ -67,7 +67,7 @@ public class UrlError extends CordovaPlugin {
     @Override
     public boolean execute(final String action, final CordovaArgs args, final CallbackContext callbackContext) throws JSONException {
         LOG.v(LOG_TAG, "Executing action: " + action);
-        if ("show".equals(action)) {
+        if ("errorUrl".equals(action)) {
             PluginResult pluginResult = new PluginResult(PluginResult.Status.OK, failingUrl);
             pluginResult.setKeepCallback(true);
             callbackContext.sendPluginResult(pluginResult);
