@@ -1,0 +1,36 @@
+{
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-plugin-urlerror",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova UrlError Plugin",
+  "engines": {
+    "cordovaDependencies": {
+      "2.0.0": {
+        "cordova-android": ">=3.6.0"
+      },
+      "4.0.0": {
+        "cordova-android": ">=3.6.0",
+        "cordova-windows": ">=4.4.0"
+      },
+      "5.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "homepage": "https://github.com/apache/cordova-plugin-urlerror#readme",
+  "keywords": [
+    "urlerror"
+  ],
+  "license": "Apache-2.0",
+  "name": "cordova-plugin-urlerror",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhilijiqi/cordova-plugin-url-error.git"
+  },
+  "version": "0.0.1"
+}
